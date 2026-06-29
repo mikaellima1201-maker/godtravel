@@ -1,0 +1,172 @@
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #C3A17A;
+    color: #222;
+}
+
+/* ===========================
+   CABEÇALHO
+=========================== */
+
+header{
+    background-color: #6B563E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 3px solid #000;
+}
+
+/* Logo */
+
+.logo{
+    width: 130px;
+    height: 70px;
+    background-color: #D9D2B5;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h2{
+    color: #333;
+}
+
+/* Menu */
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #A9E1E3;
+}
+
+/* ===========================
+   CONTEÚDO DA PÁGINA
+=========================== */
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* Divide o conteúdo em duas partes */
+
+.inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Texto */
+
+.texto{
+    width: 50%;
+}
+
+.texto h1{
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.texto p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+
+.botao{
+    display: inline-block;
+    background-color: #5F8C8C;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.botao:hover{
+    background-color: #426B6B;
+}
+
+/* Imagem */
+
+.imagem{
+    width: 500px;
+}
+
+.imagem img{
+    width: 100%;
+    border: 10px solid #D9D2B5;
+    border-radius: 12px;
+}
+
+/* ===========================
+   RODAPÉ
+=========================== */
+
+footer{
+    margin-top: 50px;
+    background-color: #6B563E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media (max-width: 900px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a{
+        margin: 10px;
+    }
+
+    .inicio{
+        flex-direction: column;
+    }
+
+    .texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagem{
+        width: 100%;
+        max-width: 450px;
+    }
+}
